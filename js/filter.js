@@ -1,11 +1,11 @@
 // create new array of Simpsons
 // Who can drink at Moe's?
 const people = [
-    { name: "Bart Simpson", age: 10 },
-    { name: "Lisa Simpson", age: 8 },
-    { name: "Marge Simpson", age: 36 },
-    { name: "Maggie Simpson", age: 1 },
-    { name: "Homer Simpson", age: 39 }
+    { name: "Bart", age: 10 },
+    { name: "Lisa", age: 8 },
+    { name: "Marge", age: 36 },
+    { name: "Maggie", age: 1 },
+    { name: "Homer", age: 39 }
 ];
 
 const drinkingAge = 18;
