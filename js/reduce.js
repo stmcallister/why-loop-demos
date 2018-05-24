@@ -1,20 +1,18 @@
 // create new array of Simpsons
 const people = [
-    { name: "Bart Simpson", age: 10 },
-    { name: "Lisa Simpson", age: 8 },
-    { name: "Marge Simpson", age: 36 },
-    { name: "Maggie Simpson", age: 1 },
-    { name: "Homer Simpson", age: 39 }
+    { name: "Bart", age: 10, admission: 15 },
+    { name: "Lisa", age: 8, admission: 12 },
+    { name: "Marge", age: 36, admission: 18 },
+    { name: "Maggie", age: 1, admission: 5 },
+    { name: "Homer", age: 39, admission: 20 }
 ];
 
-let avgAge = people.reduce((totalAge, person) => totalAge + person.age, 0)/people.length;
+// let totalCost = people.reduce((sum, person) => sum + person.admission, 0);
 
-// let totalAge = 0;
-// for (let i = 0; i < people.length; i++) {
-//     totalAge = totalAge + people[i].age;
-// }
+let totalCost = 0;
+for (let i = 0; i < people.length; i++) {
+    totalCost = totalCost + people[i].admission;
+}
 
-// let avgAge = 0;
-// avgAge = totalAge/people.length;
-console.log("Avg age of the Simpsons: " + avgAge);
+console.log("Total cost for the Simpsons: $" + totalCost);
 
