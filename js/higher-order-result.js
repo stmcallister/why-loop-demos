@@ -18,4 +18,4 @@ var biggerThanFive = numbers.myFilter(function(element, index, array) {
     return element > 5;
 });
 
-console.log(biggerThanFive);
+console.log(biggerThanFive); 

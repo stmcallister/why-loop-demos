@@ -1,10 +1,12 @@
-function Person(){
-  let that = this;
-  that.age = 0;
+// This example for illustrating that arrow functions have no this scope was taken from the MDN docs
+// here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
-  setInterval(function() {
-    that.age++; 
-    console.log('interval.this: '+ JSON.stringify(that));
+function Person(){
+  this.age = 0;
+
+  setInterval(() => {
+    this.age++; 
+    console.log('interval.this: '+ JSON.stringify(this));
   }, 1000);
 }
 
