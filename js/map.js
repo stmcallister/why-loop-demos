@@ -7,16 +7,12 @@ const people = [
     { name: "Homer", age: 39 }
 ];
 
-const fullNames = people.map((person) => { return { name: person.name + " Simpson", age: person.age }; });
-// let fullNames = [];
-
-// for (let i = 0; i < people.length; i++) {
-//     let person = {
-//         name: people[i].name + " Simpson",
-//         age: people[i].age
-//     }
-//     fullNames.push(person);
-// }
+let fullNames = people.map((person) => {
+    return {
+        name: person.name + " Simpson",
+        age: person.age
+    }
+});
 
 console.log("first names: "+ JSON.stringify(people));
 console.log();

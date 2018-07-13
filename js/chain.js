@@ -22,5 +22,5 @@ let result = people
                         
 // console.log(people);
 // console.log(result);
-console.log("Total cost of admission for adults: $"+ result);
+console.log("\n\nTotal cost of admission for adults: $"+ result + "\n\n");
 

@@ -7,12 +7,7 @@ const people = [
     { name: "Homer Simpson", age: 39, admission: 20 }
 ];
 
-// let totalCost = people.reduce((sum, person) => sum + person.admission, 0);
-
-let totalCost = 0;
-for (let i = 0; i < people.length; i++) {
-    totalCost = totalCost + people[i].admission;
-}
+let totalCost = people.reduce((total, person) => total + person.admission, 0);
 
 console.log("Total cost for the Simpsons: $" + totalCost);
 

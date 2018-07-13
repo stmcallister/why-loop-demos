@@ -8,17 +8,8 @@ const people = [
     { name: "Homer", age: 39 }
 ];
 
-const drinkingAge = 18;
-const adults = people.filter((person => person.age >= drinkingAge));
-
-// let adults = [];
-
-// for(let i = 0; i < people.length; i++) {
-//     if (people[i].age >= drinkingAge) {
-//         adults.push({ name: people[i].name, age: people[i].age });
-//     }
-// }
-
+const drinkingAge = 21;
+let adults = people.filter((person) => person.age >= drinkingAge); 
 
 console.log("people: "+ JSON.stringify(people));
 console.log();
