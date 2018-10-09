@@ -14,7 +14,7 @@ public class FilterDemo {
 
         int drinkingAge = 21;
 
-//        List<Person> adults = people.stream().filter(member -> member.age >= drinkingAge)
+//        List<Person> adults = people.stream().filter(member -> member.getAge() >= drinkingAge)
 //                .collect(Collectors.toList());
 
         ArrayList<Person> adults = new ArrayList<>();
