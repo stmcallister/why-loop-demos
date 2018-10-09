@@ -8,7 +8,7 @@ const people = [
     { name: "Homer", age: 39 }
 ];
 
-const drinkingAge = 18;
+const drinkingAge = 21;
 const adults = people.filter((person => person.age >= drinkingAge));
 
 // let adults = [];

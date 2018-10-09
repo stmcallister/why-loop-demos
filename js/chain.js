@@ -18,7 +18,7 @@ let result = people
                 // find the adults
                 .filter(person => person.age >= 18)
                 // cost for adults
-                .reduce((sum,adult) => sum + adult.admission, 0);
+                 .reduce((sum,adult) => sum + adult.admission, 0);
                         
 // console.log(people);
 // console.log(result);

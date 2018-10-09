@@ -2,7 +2,7 @@
 // here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
 function Person(){
-  this.age = 0;
+  this.age = 10;
 
   setInterval(() => {
     this.age++; 
