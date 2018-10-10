@@ -13,14 +13,14 @@ public class ReduceDemo {
         people.add(new Person("Homer Simpson", 39, 20));
 
 //        int totalCost = 0;
+//        for (Person person : people) {
+//            totalCost += person.getAdmission();
+//        }
 
         int totalCost  = people.stream()
                 .map((person) -> person.getAdmission())
                 .reduce(0, (sum, admission) -> sum + admission);
 //
-//        for (Person person : people) {
-//            totalCost += person.getAdmission();
-//        }
         System.out.println("Total price of admission (with reduce): $"+ totalCost);
     }
 

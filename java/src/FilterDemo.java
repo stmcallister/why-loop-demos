@@ -14,15 +14,16 @@ public class FilterDemo {
 
         int drinkingAge = 21;
 
-//        List<Person> adults = people.stream().filter(member -> member.getAge() >= drinkingAge)
-//                .collect(Collectors.toList());
+        List<Person> adults = people.stream()
+                .filter(member -> member.getAge() >= drinkingAge)
+                .collect(Collectors.toList());
 
-        ArrayList<Person> adults = new ArrayList<>();
-        for (Person person : people) {
-            if (person.getAge() >= drinkingAge) {
-                adults.add(person);
-            }
-        }
+//        ArrayList<Person> adults = new ArrayList<>();
+//        for (Person person : people) {
+//            if (person.getAge() >= drinkingAge) {
+//                adults.add(person);
+//            }
+//        }
 
         System.out.println(adults.toString());
     }

@@ -9,8 +9,15 @@ public class ChainDemo {
         people.add(new Person("Maggie Simpson", 1,5));
         people.add(new Person("Homer Simpson", 39, 20));
 
-//        int totalCost = 0;
         int adultAge = 18;
+
+//        int totalCost = 0;
+//        ArrayList<Person> adults = new ArrayList<>();
+//        for (Person person : people) {
+//            if (person.getAge() >= adultAge) {
+//                totalCost += person.getAdmission();
+//            }
+//        }
 
         int totalCost  = people.stream()
                 .filter(member -> member.getAge() >= adultAge)
